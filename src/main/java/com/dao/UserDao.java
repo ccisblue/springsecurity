@@ -1,11 +1,8 @@
 package com.dao;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.stereotype.Service;
 
 import com.model.Resource;
@@ -18,7 +15,8 @@ public class UserDao {
 	public User findByName(String username) {
 		User user = new User();
 		user.setUsername("admin");
-		user.setPassword(DigestUtils.md5Hex("123456"));
+//		user.setPassword(DigestUtils.md5Hex("123456"));
+		user.setPassword("123456");
 		user.setEnabled(true);
 		
 		return user;
