@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
 import com.model.Resource;
 import com.model.Role;

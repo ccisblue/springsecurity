@@ -11,6 +11,8 @@
 	<http pattern="/login.jsp" security="none" />
 
 	<http auto-config="true" use-expressions="true">
+		 <form-login login-page="/login.jsp" />
+	    <logout logout-url="/logout" logout-success-url="/login.jsp" invalidate-session="true"/>
 		<custom-filter ref="myFilter" before="FILTER_SECURITY_INTERCEPTOR"/>
 	</http>
 
