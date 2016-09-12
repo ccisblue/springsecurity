@@ -38,7 +38,5 @@
     <beans:bean id="mySecurityMetadataSource" class="com.security.MySecurityMetadataSource">  
         <beans:constructor-arg name="resourceDao" ref="resourceDao"></beans:constructor-arg>  
     </beans:bean>
-    
-    <beans:bean id="userDao" class="com.dao.UserDao"></beans:bean>
-    <beans:bean id="resourceDao" class="com.dao.ResourceDao"></beans:bean>
+
 </beans:beans>  
